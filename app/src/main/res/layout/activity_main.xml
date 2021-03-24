@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        style="@style/contentSpacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/enter_your_name"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:textAllCaps="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question1"
+                style="@style/questionSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/covid_stands_for"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/question_1_Radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/Question_1_Op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/corona_virus_disease"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/Question_1_Op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/china_originated_virus_in_december"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/Question_1_Op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cow_virus_in_delaware"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="102dp"
+                    android:layout_height="86dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/question_1_Radio"
+                    android:layout_toRightOf="@id/question_1_Radio"
+                    android:contentDescription="@string/covid19"
+                    android:src="@drawable/covid_19" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question2"
+                style="@style/questionSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/the_following_are_symptoms_of_the_covid_19_choose_2_answers"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/question_2_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/question_2_Op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/fever"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_2_Op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/insomnia"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_2_Op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/feeling_energetic"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_2_Op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/shortness_of_breath"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_2_Op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/mood_swings"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="132dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/question_2_checkBox"
+                    android:layout_toRightOf="@id/question_2_checkBox"
+                    android:contentDescription="@string/symptoms"
+                    android:src="@drawable/symptom" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question3"
+                style="@style/questionSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/i_will_contract_covid_19_from_my_pet_dog_or_cat"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/question_3_Radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/question_3_Op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/question_3_Op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="63dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginLeft="255dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/question_3_Radio"
+                    android:layout_toRightOf="@id/question_3_Radio"
+                    android:contentDescription="@string/pets"
+                    android:src="@drawable/pet" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/question4"
+                style="@style/questionSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/covid_19_has_been_declared_by_who_world_health_organization_as_provide_your_answer_below"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/question_4_Answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints="@string/Answer_in_one_word"
+                    android:hint="@string/Answer_in_one_word"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/pandemic"
+                    android:src="@drawable/pandemic" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question5"
+                style="@style/questionSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/best_practices_to_slow_the_spread_of_covid_19_are_choose_3_answers"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/question_5_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/washing_hands_regularly"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/partying_with_a_group_of_50_people"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/social_distancing"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/avoiding_travel"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/frequently_touching_face_and_nose"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/question_5_Op6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/eating_bats"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="77dp"
+                    android:layout_height="131dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@+id/question_5_checkBox"
+                    android:layout_toRightOf="@id/question_5_checkBox"
+                    android:contentDescription="@string/monalisa"
+                    android:src="@drawable/mosa_lisa" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="calculateScore"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

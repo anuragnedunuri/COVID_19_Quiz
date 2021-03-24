@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">COVID-19 Quiz</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="covid_stands_for">1. COVID stands for?</string>
+    <string name="corona_virus_disease">Corona Virus Disease</string>
+    <string name="china_originated_virus_in_december">China Originated Virus in December</string>
+    <string name="cow_virus_in_delaware">Cow Virus in Delaware</string>
+    <string name="covid19">COVID19</string>
+    <string name="the_following_are_symptoms_of_the_covid_19_choose_2_answers">2. The following are symptoms of the COVID-19. Choose 2 </string>
+    <string name="fever">Fever</string>
+    <string name="insomnia">Insomnia</string>
+    <string name="feeling_energetic">Feeling energetic</string>
+    <string name="shortness_of_breath">Shortness of breath</string>
+    <string name="mood_swings">Mood swings</string>
+    <string name="symptoms">symptoms</string>
+    <string name="i_will_contract_covid_19_from_my_pet_dog_or_cat">3. I will contract COVID – 19 from my pet dog or cat?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="covid_19_has_been_declared_by_who_world_health_organization_as_provide_your_answer_below">4. COVID-19 has been declared by WHO (World Health Organization) as</string>
+    <string name="Answer_in_one_word">Answer in one word</string>
+    <string name="pandemic">pandemic</string>
+    <string name="pets">pets</string>
+    <string name="best_practices_to_slow_the_spread_of_covid_19_are_choose_3_answers">5. Best practices to slow the spread of COVID-19 are: (Choose 3)</string>
+    <string name="washing_hands_regularly">Washing hands regularly</string>
+    <string name="partying_with_a_group_of_50_people">Partying with a group of 50 people</string>
+    <string name="social_distancing">Social distancing</string>
+    <string name="avoiding_travel">Avoiding travel</string>
+    <string name="frequently_touching_face_and_nose">Frequently touching face and nose</string>
+    <string name="eating_bats">Eating bats</string>
+    <string name="monalisa">monalisa</string>
+    <string name="submit">Submit</string>
+</resources>
